@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Boxy sizingi</title>
+  <style>
+    body {
+    }
+
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 10px solid black;
+      margin-bottom: 20px;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+      background: lightgray;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+      background: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Element z box-sizing: content-box ma rzeczywistą szerokość 260px.
+  </p>
+
+  <div class="box content-box"></div>
+
+  <p>
+    Element z box-sizing: border-box ma rzeczywistą szerokość 200px.
+  </p>
+
+  <div class="box border-box"></div>
+
+  <p>
+    box-sizing: border-box ułatwia pracę, gdy elementy mają trzymać stałe
+    wymiary i padding oraz obramowanie nie powinny powiększać całego bloku,
+    np. w układach kolumnowych, kartach i gridach.
+  </p>
+
+</body>
+</html>
